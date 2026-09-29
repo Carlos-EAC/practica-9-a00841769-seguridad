@@ -1,0 +1,10 @@
+Laboratory at https://startdroid.pages.dev/practicas/tareas-hilt .
+
+== Ejercicio A2 ==
+El archivo TareasRepository es el que llama al API, así que habría que reemplazar eso por la lista estática.
+
+== Ejercicio E1 ==
+Cambié 1. Sin este setup habría que editar el TareasRepository o el ViewModel. Como ahora tenemos la interfaz, ambos no se tienen que preocupar con de dónde vienen los datos.
+
+== Ejercicio E2 ==
+La inyección de dependencias presenta una interfaz a los componentes de tu aplicación, de tal manera que la dependencia puede cambiar (con que aún provea lo que requiere la interfaz) sin que tus componentes que lo usen tengan que cambiar. TareasRepository es la interfaz. @Binds conecta una interfaz con algo que Hilt sabe construir.
